@@ -1,18 +1,19 @@
-<!doctype html>
-<html lang="zh-cn">
-	<head>
-		<meta charset="utf-8">
-		<title>Javascript makes Your life better</title>
-		<link rel="stylesheet" type="text/css" href="./dist/web/css/web.css?<!--version.css-->">
-	</head>
-	<body>
-		<nav class="nav">
-			<ul>
-				<li>Home</li>
-				<li>Articles</li>
-				<li>About Me</li>
-			</ul>
-		</nav>
-		<script src='./dist/web/js/index.js?<!--version.js-->'></script>
-	</body>
-</html>
+---
+layout: default
+title : April's blog
+---
+
+<div class="post-container">
+	<ul class="post-list">
+		{% for post in site.posts %}
+			<li class="list-item">
+				<h3><a href="{{ post.url }}" class="post-title">{{post.title}}</a></h3>
+				<article>
+					<section>
+						{{post.content}}
+					</section>
+				</article>
+			</li>
+		{% endfor %}
+	</ul>
+</div>

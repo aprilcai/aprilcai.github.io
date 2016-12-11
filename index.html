@@ -8,9 +8,11 @@ title : April's blog
 		{% for post in site.posts %}
 			<li class="list-item">
 				<h3><a href="{{ post.url }}" class="post-title">{{post.title}}</a></h3>
+				<h4>at {{page.date}}</h4>
+				<div>{{page.tags}}</div>
 				<article>
 					<section>
-						{{post.content}}
+						{{post.excerpt}}
 					</section>
 				</article>
 			</li>

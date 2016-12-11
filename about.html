@@ -1,5 +1,9 @@
 ---
 title: About April
+username : Aprilcai
+email1: 1097311105@qq.com
+email2: terrytsaic@gmail.com
+company: Tencent
 ---
 <!doctype html>
 <html>
@@ -10,9 +14,20 @@ title: About April
 
 		{% include nav.html %}
 
-		<div>{{ page.title }}</div>
+		<div class="article-container" style="height: 100%;">	
+			{{ page.title }}
 
-		{% include footer.html %}
-		
+			<dl class="intro">
+				<dt>Name: </dt>
+				<dd>{{ page.username }}</dd>
+
+				<dt>Email: </dt>
+				<dd>{{ page.email1 }}</dd>
+				<dd>{{ page.email2 }}</dd>
+
+				<dt>Company: </dt>
+				<dd>{{ page.company }}</dd>
+			</dl>
+		</div>		
 	</body>
 <html>

@@ -1,0 +1,108 @@
+@code-blue: #21b8ec;
+@code-red : #f53c6a;
+@code-yellow: #ff9f00;
+@code-green: #82f145;
+@code-normal: #ffffff;
+@code-bg: #333333;
+
+/** javascript **/
+.language-javascript {
+	.highlight {
+		background: @code-bg;
+		position: relative;
+		padding: .5rem;
+		&::after{
+			content: 'JavaScript';
+			position: absolute;
+			right: 3px;
+			top: 3px;
+			font-size: 12px;
+			color: @code-normal;
+		}
+		code {
+			tab-size: 2;
+			color: @code-normal;
+			.kd {
+				color: @code-blue;
+			}
+			.nx {
+				color: @code-normal;
+			}
+			.o {
+				color: @code-red;
+			}
+			.s1 {
+				color: @code-yellow;
+			}
+			.p {
+				color: @code-normal;
+			}
+		}
+	}
+}
+
+/** html **/
+.language-html {
+	.highlight {
+		background: @code-bg;
+		position: relative;
+		padding: .5rem;
+		&::after{
+			content: 'html';
+			position: absolute;
+			right: 3px;
+			top: 3px;
+			font-size: 12px;
+			color: @code-normal;
+		}
+		code {
+			tab-size: 2;
+			color: @code-normal;
+			.nt {
+				color: @code-red;
+			}
+			.na {
+				color: @code-green;
+			}
+			.s {
+				color: @code-yellow;
+			}
+		}
+	}
+}
+
+/** css **/
+.language-css {
+	.highlight {
+		background: @code-bg;
+		position: relative;
+		padding: .5rem;
+		&::after{
+			content: 'css';
+			position: absolute;
+			right: 3px;
+			top: 3px;
+			font-size: 12px;
+			color: @code-normal;
+		}
+		code {
+			tab-size: 2;
+			color: @code-normal;
+			.nt {
+				color: @code-red;
+			}
+			.nc {
+				color: @code-green;
+			}
+			.s2 {
+				color: @code-yellow;
+			}
+			.nl {
+				color: @code-blue;
+			}
+			.nb {
+				color: @code-blue;
+			}
+		}
+	}
+}

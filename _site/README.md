@@ -2,7 +2,7 @@
 
 # build web site
 
-### less
+### less (in src dir)
 ```bash
 	sudo gulp
 ```
@@ -18,4 +18,3 @@
 ```bash
 	jekyll build --safe --watch
 ```
-
